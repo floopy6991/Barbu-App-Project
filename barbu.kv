@@ -2,11 +2,11 @@
 
 <BarbuGame>:
    canvas:
-      Color:
-         rgb: (0.055, 0.73, 0.012)
       Rectangle:
          pos: self.pos
          size: self.size
+         AsyncImage:
+            source: 'images\2nd-Concpet-Design.svg'
    Label:
       font_size: 20
       center_x: root.width / 6
@@ -25,7 +25,7 @@
       top: root.top - 10
       text: "Current Game:"
       
-   Image:
+   Rectangle:
       size: 60, 90
       center_x: root.width / 5
       top: root.top / 3

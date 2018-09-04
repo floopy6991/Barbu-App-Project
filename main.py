@@ -1,6 +1,7 @@
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.uix.image import Image
+from kivy.uix.image import AsyncImage
 #from logic import *
 
 class BarbuGame(Widget):

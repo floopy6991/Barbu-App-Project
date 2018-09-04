@@ -1,5 +1,7 @@
 """gonna try my own keep it simple stupid attempt of barbu game"""
 import random
+#import pygame
+#from pygame.locals import *
 
 """First, to create a deck of cards (which in Barbu goes from 5 - Ace)"""
 def CreateDeck():
@@ -9,19 +11,17 @@ def CreateDeck():
     suits = ["Hearts", "Clubs", "Diamonds", "Spades"]
     deck = []
     
-    #This will convert the values 2-10 into string data and place them in the empty 'cardvalues' list
+    #This creates a card from 5-10 and 'royal' cards and puts them in the empty cardvalues list
     for i in range(5,11):
         cardvalues.append(str(i))
-    #I also want the 'royal' cards in there as well
     for j in range(4):
         cardvalues.append(royals[j])
     #print(cardvalues)
         
-    #This will 'attach' the suits to the card values
+    #This will 'attach' the suits to the card values and add them to the 'deck' list
     for k in range(4):
         for l in range(10):
             cards = (cardvalues[l] +  " of " + suits[k])
-            #Now to add the cards to the empty 'deck' list
             deck.append(cards)
     #print(deck)
     
@@ -56,11 +56,11 @@ def DealCards(deck):
     print(player3_hand)
     print(player4_hand)
     
-#DealCards()
+DealCards([deck])
 
 """In order for a game to be played, a round needs to be defined"""
 def Round():
-    print("fuck")
+    print("whoops ill do this later")
 
 """Now to create the logic for the actual game and playing a round"""
 """def PlayBarbu():
@@ -71,10 +71,7 @@ def Round():
         play_card = input("What card would you like to play? ").lower()
         print(play_card)"""
         
-        
-    
-PlayBarbu()
-        
-            
+"""Need to create somoe program to use for test data for standard"""
+
             
         
